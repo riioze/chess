@@ -1,1 +1,3 @@
-add_executable(chess main.cpp)
+add_subdirectory(piece)
+add_subdirectory(board)
+add_subdirectory(move)
