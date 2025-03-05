@@ -3,3 +3,7 @@
 //
 
 #include "move.hpp"
+
+Piece* Move::getPieceAtStart() const {
+    return board->getPiece(start.getX(), start.getY());
+}

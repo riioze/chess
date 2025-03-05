@@ -3,13 +3,16 @@ project(chess)
 
 set(CMAKE_CXX_STANDARD 23)
 
-
 # source dirs
 add_subdirectory(source)
 add_subdirectory(include)
 
+# Include directories
+include_directories(include)
+
+# Source files
 file(GLOB SOURCES source/*.cpp)
-file(GLOB HEADERS include/*.h)
+file(GLOB HEADERS include/*.hpp)
 
 add_executable(chess ${SOURCES} ${HEADERS})
 

@@ -1,15 +1,16 @@
 //
 // Created by Nino Keravel on 19/02/2025.
 //
-#pragma once
-#include <vector>
-#include "../move/move.hpp"
-
 
 #ifndef BOARD_HPP
 #define BOARD_HPP
 
-class Piece;
+class Board;
+
+#include "../piece/piece.hpp"
+#include <vector>
+
+class Move;
 
 class Board {
     private:
