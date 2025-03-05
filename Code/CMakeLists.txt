@@ -15,6 +15,7 @@ if (NOT SDL3_FOUND)
           GIT_SHALLOW    TRUE
           GIT_PROGRESS   TRUE
   )
+  FetchContent_MakeAvailable(SDL3)
 endif()
 
 
