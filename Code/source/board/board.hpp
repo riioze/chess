@@ -3,12 +3,13 @@
 //
 #pragma once
 #include <vector>
-#include "../piece/piece.hpp"
 #include "../move/move.hpp"
 
 
 #ifndef BOARD_HPP
 #define BOARD_HPP
+
+class Piece;
 
 class Board {
     private:

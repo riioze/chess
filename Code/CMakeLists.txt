@@ -4,7 +4,6 @@ project(chess)
 set(CMAKE_CXX_STANDARD 23)
 
 # find SLD3
-set(SDL3_DIR "C:/SDL3/build")
 find_package(SDL3 REQUIRED)
 
 #

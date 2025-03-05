@@ -8,11 +8,10 @@
 #define ROOK_HPP
 
 
-
 class Rook : Piece {
 	public:
-          Rook(bool isWhite) : Piece('R', isWhite) {}
-          bool isValidMove(const Move& move, const Board& board);
+		Rook(bool isWhite) : Piece('R', isWhite) {}
+		bool isValidMove(const Move& move, const Board& board);
 };
 
 

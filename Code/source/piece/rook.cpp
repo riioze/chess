@@ -19,4 +19,7 @@ bool Rook::isValidMove(const Move& move, const Board& board) {
             }
         }
     }
+
+
+    return false;
 }

@@ -1,12 +1,13 @@
 //
 // Created by Nino Keravel on 19/02/2025.
 //
-#pragma once
+
+
+#include "../move/move.hpp"
 #include "../board/board.hpp"
-
-
 #ifndef PIECE_H
 #define PIECE_H
+
 
 class Piece {
     public:
