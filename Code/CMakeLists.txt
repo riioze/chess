@@ -4,9 +4,18 @@ project(chess)
 set(CMAKE_CXX_STANDARD 23)
 
 # find SLD3
-find_package(SDL3 REQUIRED)
+find_package(SDL3 QUIET)
 
-#
+if (NOT SDL3_FOUND)
+  FetchContent_Declare(SDL3
+          GIT_REPOSITORY https://github.com/libsdl-org/SDL.git
+          GIT_TAG        release-3.2.0
+          GIT_SHALLOW    TRUE
+          GIT_PROGRESS   TRUE
+  )
+endif()
+
+
 include_directories($(SDL3_INCLUDE_DIRS))
 
 # source dirs
