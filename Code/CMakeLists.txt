@@ -3,11 +3,6 @@ project(chess)
 
 set(CMAKE_CXX_STANDARD 23)
 
-# find SLD3
-find_package(SDL3 REQUIRED)
-
-#
-include_directories($(SDL3_INCLUDE_DIRS))
 
 # source dirs
 add_subdirectory(source)
