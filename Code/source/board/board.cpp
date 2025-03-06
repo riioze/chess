@@ -13,6 +13,10 @@ Board::Board(){
     }
 }
 
-bool Board::isEmpty(const int x, const int y) const {
-    return grid[x][y] == nullptr;
+bool Board::isEmpty(const Position& pos) const {
+    return grid[pos.getX()][pos.getY()] == nullptr;
+}
+
+Piece* Board::getPiece(const Position& pos) const {
+    return grid[pos.getX()][pos.getY()];
 }

@@ -4,10 +4,13 @@
 #include "piece.hpp"
 
 class Pawn : public Piece {
-public:
-    Pawn(bool isWhite, Board *board, const Position& position) : Piece('P', isWhite, board, position) {}
-    virtual ~Pawn() = default;
-    std::vector<Move> getValidMoves();
+    public:
+        Pawn(bool isWhite, Board *board, const Position& position) : Piece('P', isWhite, board, position) {}
+        virtual ~Pawn() = default;
+        std::vector<Move> getValidMoves();
+    private:
+        void checkForward(std::vector<Move>& moves);
+        void check2Forward(std::vector<Move>& moves, const Position& one_step_forward);
 };
 
 #endif // PAWN_HPP

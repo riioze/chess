@@ -8,6 +8,7 @@
 class Board;
 
 #include "../piece/piece.hpp"
+#include "../../include/position.hpp"
 #include <vector>
 
 class Move;
@@ -18,8 +19,8 @@ class Board {
     std::vector<Move> moveHistory;
     public:
     Board();
-    bool isEmpty(int x, int y) const;
-    Piece *getPiece(const int x, const int y) const {return grid[x][y];}
+    bool isEmpty(const Position& pos) const;
+    Piece *getPiece(const Position& pos) const;
 };
 
 #endif //BOARD_HPP
